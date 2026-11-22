@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常见单位换算的易错点</title>
+<meta name="description" content="单位换算 的实用经验：包含具体步骤、数字参考与常见错误，约 2000 字。">
+<meta name="keywords" content="单位换算,换算,实用经验,步骤">
+<link rel="canonical" href="">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "常见单位换算的易错点", "description": "单位换算 的实用经验整理，包含具体做法与常见错误。", "author": {"@type": "Person", "name": "编辑部"}, "datePublished": "2026-11-22", "inLanguage": "zh-CN"}, {"@type": "WebPage", "name": "常见单位换算的易错点"}]}</script>
+<style>
+body{font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;max-width:820px;margin:40px auto;padding:0 20px;line-height:1.9;color:#1f2328}
+h1{font-size:28px;line-height:1.4}h2{font-size:21px;margin-top:34px;border-left:4px solid #0b62d6;padding-left:10px}
+h3{font-size:17px;margin-top:22px}ul,ol{padding-left:24px}a{color:#0b62d6;text-decoration:none}a:hover{text-decoration:underline}
+.toc{background:#f6f8fa;border:1px solid #e5e7eb;padding:12px 18px;border-radius:8px;font-size:14px}
+footer{margin-top:44px;border-top:1px solid #eee;padding-top:16px;font-size:14px;color:#57606a}
+</style>
+</head>
+<body>
+<h1>常见单位换算的易错点</h1>
+<div class="toc"><strong>目录</strong><br>一、问题与目标　二、具体做法　三、常见错误　四、效果判断　五、常见问题</div>
+<h2>换算为什么会成为日常工作的“隐形坑”</h2>
+<p>单位换算看似只是乘除，真正麻烦的是口径不一致：合同写“万元”，系统存“元”；图纸标“毫米”，采购单写“米”；体检报告用“mmol/L”，海外资料用“mg/dL”。一次错位，可能让报价差 10 倍、用药差 1000 倍。下面按长度与面积、质量与体积、时间与速率、货币与金额四个方向拆解可执行步骤与常见错误。</p>
+
+<h2>长度与面积：先统一到米，再谈平方</h2>
+<p>长度换算的核心是“基准单位”。工程与制造常用毫米（mm），建筑与土地常用米（m），英美资料常见英寸（in）、英尺（ft）。建议先全部落到米：1 mm = 0.001 m，1 cm = 0.01 m，1 in = 0.0254 m，1 ft = 0.3048 m。换算步骤可固定为 3 步：<strong>1）识别源单位；2）乘以到米的系数；3）再除以目标单位到米的系数</strong>。例如 12 ft 转 cm：12×0.3048=3.6576 m，再÷0.01=365.76 cm。</p>
+<p>面积最容易出错，因为“长度系数要平方”。1 m² = 10 000 cm²，而不是 100 cm²；1 ft² = 0.092903 m²。常见错误是把 1 m² 当成 100 cm²，导致瓷砖、地毯用量少算 100 倍。做面积换算时，先把长和宽各自换成同一单位再相乘，比直接背系数更稳。</p>
+<ul>
+<li>常见错误 1：把 1 公顷当成 100 m²（实际 1 ha = 10 000 m²）。</li>
+<li>常见错误 2：图纸 mm 直接当 cm 下单，尺寸放大 10 倍。</li>
+<li>常见错误 3：英寸管径与公称直径混用，DN25 并不等于 25 mm 内径。</li>
+</ul>
+
+<h2>质量与体积：克、千克、升、毫升的“千进制”陷阱</h2>
+<p>质量换算相对规整：1 kg = 1000 g，1 t = 1000 kg，1 lb ≈ 0.453592 kg。体积在公制内也规整：1 L = 1000 mL，1 m³ = 1000 L。真正容易混的是“质量—体积”跨维度换算，必须引入密度。步骤为：<strong>1）确认物质密度 ρ；2）质量 m÷ρ 得体积；3）体积×ρ 得质量</strong>。例如水近似 1 g/mL，500 g 水≈500 mL；但食用油约 0.92 g/mL，500 g 油≈543 mL，差 8.7%。</p>
+<p>金额与剂量场景要特别小心。农药稀释常写“每 15 L 水加 10 mL 药”，若桶是 20 L，按比例应为 13.3 mL；直接加 10 mL 会低 25%。烘焙中 1 杯面粉约 120 g，而 1 杯水约 240 g，用体积杯互换质量会偏差近一倍。</p>
+<ul>
+<li>常见错误 1：把 1 m³ 当成 100 L（实际 1000 L）。</li>
+<li>常见错误 2：mL 与 g 无条件互换，忽略密度。</li>
+<li>常见错误 3：磅与公斤按 1:2 粗算，10 lb 实际 4.536 kg，不是 5 kg。</li>
+</ul>
+
+<h2>时间与速率：先换秒，再换分母</h2>
+<p>时间换算的基数是秒：1 h = 3600 s，1 min = 60 s，1 天 = 86 400 s。速率换算的难点在“分母也带单位”。把 km/h 换成 m/s，标准步骤是：<strong>1）千米换米×1000；2）小时换秒÷3600；3）合并为÷3.6</strong>。所以 72 km/h = 20 m/s，而不是 72×1000=72 000 m/s。反向 m/s 转 km/h 乘 3.6。</p>
+<p>金额型速率同样常见：人工费 350 元/天，按 8 小时计为 43.75 元/小时；若加班按 1.5 倍，则 65.63 元/小时。若把“元/天”直接当“元/小时”，报价会低 8 倍。时间区间也要写清： “3 个工作日”不等于“3 个自然日”，跨周末可能差 2 天。</p>
+<ul>
+<li>常见错误 1：km/h 转 m/s 时只换长度不换时间。</li>
+<li>常见错误 2：把“元/月”按 30 天除，忽略计薪天数 21.75 天。</li>
+<li>常见错误 3：把 1.5 小时写成 1 小时 50 分（应为 1 小时 30 分）。</li>
+</ul>
+
+<h2>货币与金额：单位、口径、汇率三件事分开算</h2>
+<p>金额换算先分清“单位”和“币种”。中文里“1 万元”=10 000 元，“1 亿元”=100 000 000 元；英文 1 million = 1 000 000，1 billion = 1 000 000 000。合同写“万元”而系统存“元”，录入时差 10 000 倍。建议步骤：<strong>1）标注币种；2）标注金额单位；3）统一到元；4）再乘汇率</strong>。例如 3.5 万美元，汇率 7.2，先确认是 35 000 美元，再×7.2=252 000 元。</p>
+<p>汇率本身有时间戳。同一天不同渠道可能差 0.3%—0.8%，10 万美元级别就差 2 000—6 000 元。预算表应写明“汇率 7.20，取数日 6 月 1 日”。金额区间也要写单位： “预算 5—8 万元”不能写成“5—8 元”。</p>
+<ul>
+<li>常见错误 1：把“万元”当“元”录入，金额放大 10 000 倍。</li>
+<li>常见错误 2：把 1 billion 当 1 亿（实际 10 亿）。</li>
+<li>常见错误 3：汇率乘反，把美元金额÷7.2 当成人民币。</li>
+</ul>
+
+<h2>常见问题</h2>
+<p><strong>问：1 m² 到底等于多少 cm²？</strong>答：10 000 cm²。因为 1 m = 100 cm，面积要平方，100×100=10 000。把 1 m² 写成 100 cm² 是最常见错误之一。</p>
+<p><strong>问：72 km/h 换成 m/s 为什么是 20，而不是 72 000？</strong>答：长度换了，时间也要换。72×1000÷3600=20。只换长度不换时间，会把结果放大 3600 倍。</p>
+<p><strong>问：500 mL 油等于 500 g 吗？</strong>答：不一定。水约 1 g/mL，500 mL≈500 g；食用油约 0.92 g/mL，500 mL≈460 g。跨质量与体积换算必须用密度，不能直接按 1:1。</p>
+<h2>参考资料</h2>
+<ul>
+<li><a href="https://tvzuqiu.zhibow-xinai.com.cn/">tvzuqiu.zhibow-xinai.com.cn</a></li>
+</ul>
+<footer>本文为经验整理，数据与方法随实践持续更新。</footer>
+</body>
+</html>
